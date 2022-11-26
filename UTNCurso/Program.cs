@@ -29,6 +29,8 @@ builder.Services.AddSingleton<IAuthorizationHandler, AgeRequirementHandler>();
 builder.Services.AddHttpClient();
 builder.Services
     .AddTransient<ITodoClient<TodoItemDto>, TodoClient>();
+// todo hacer el maper cuando pueda
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
